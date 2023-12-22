@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/bookmark-icon-png-13.jpg">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="content d-flex justify-content-center">
+            <h1 class="py-2 position-relative">Bookmarker</h1>
+        </div>
+        <div class="bookmark w-100 d-flex flex-column align-items-center mt-5 justify-content-center p-3 gap-4 py-4">
+            <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="siteName w-100">
+                <label for="bookmarkName" class="fw-bold pb-2"><i class="fa-solid fa-book-bookmark pe-2"></i>Site
+                    Name</label>
+                <input type="text" oninput="vaild(this.value)" id="bookmarkName" placeholder="Bookmark Name"
+                    class="form-control">
+            </div>
+            <div class="siteUrl w-100">
+                <label for="bookmarkURL" class="fw-bold pb-2"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="text" id="bookmarkURL" oninput="vaildmail(this.value)" placeholder="Website URL"
+                    class="form-control">
+            </div>
+            <button id="submitBtn" class="btn">Submit</button>
+        </div>
+        <table class="table bg-light text-center mt-4">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tBody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
