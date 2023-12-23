@@ -44,9 +44,9 @@ function display(arr) {
         <td><button onclick="deletebookmark(${i});" id="deleteBtns" class="btn btn-delete"><i class="fa-solid fa-trash-can pe-2"></i>Delete</button></td>
     </tr> 
         `
-        tBody.innerHTML = box
+        
     }
-
+    tBody.innerHTML = box
 }
 
 
